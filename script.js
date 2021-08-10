@@ -3,13 +3,13 @@
 function snapCrackle (maxValue) {
     for (let inicio = 1; inicio < maxValue; inicio++) {
       if (maxValue % 2 !== 0 && maxValue % 5 !==0) {
-        console.log ("Snap");
+        return "Snap";
       } else if (maxValue % 5 === 0) {
-        console.log ("Crackle");
+        return "Crackle";
       } else if ((maxValue % 2 !== 0) && (maxValue % 5 === 0)) {
-        console.log ("SnapCrackle");
+        return "SnapCrackle";
       } else {
-        console.log (maxValue);
+        return maxValue;
         
       }
     }
@@ -23,15 +23,15 @@ function snapCrackle (maxValue) {
   function snapCracklePrime (maxValue) {
     for (let inicio = 1; inicio < maxValue; inicio++) {
       if (maxValue % 2 !== 0 && maxValue % 5 !== 0) {
-        console.log ("Snap");
+        return "Snap";
       } else if (maxValue % 5 === 0) {
-        console.log ("Crackle");
+        return "Crackle";
       } else if (maxValue % 1 !== 0 && maxValue % 5 !== 0) {
-        console.log ("Prime");
+        return "Prime";
       } else if ((maxValue % 2 !== 0) && (maxValue % 5 === 0)) {
-        console.log ("SnapCrackle");
+        return "SnapCrackle";
       } else {
-        console.log (maxValue);
+        return maxValue;
         
       }
     }
